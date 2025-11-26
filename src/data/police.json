@@ -1,0 +1,67 @@
+[
+  {
+    "id": "PO001",
+    "name": "Inspector Rajendra Singh",
+    "badge_number": "MH-2345",
+    "station": "Andheri Police Station",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "email": "rajendra.singh@police.gov.in",
+    "phone": "+91-9123456780",
+    "status": "active",
+    "cases_assigned": 12,
+    "created_at": "2023-01-15T10:00:00Z"
+  },
+  {
+    "id": "PO002",
+    "name": "Sub-Inspector Meera Patel",
+    "badge_number": "GJ-5678",
+    "station": "Satellite Police Station",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "email": "meera.patel@police.gov.in",
+    "phone": "+91-9123456781",
+    "status": "active",
+    "cases_assigned": 8,
+    "created_at": "2023-03-20T10:00:00Z"
+  },
+  {
+    "id": "PO003",
+    "name": "Inspector Amit Kumar",
+    "badge_number": "DL-8901",
+    "station": "Connaught Place Police Station",
+    "city": "Delhi",
+    "state": "Delhi",
+    "email": "amit.kumar@police.gov.in",
+    "phone": "+91-9123456782",
+    "status": "active",
+    "cases_assigned": 15,
+    "created_at": "2022-11-10T10:00:00Z"
+  },
+  {
+    "id": "PO004",
+    "name": "Sub-Inspector Priya Sharma",
+    "badge_number": "RJ-2345",
+    "station": "Civil Lines Police Station",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "email": "priya.sharma@police.gov.in",
+    "phone": "+91-9123456783",
+    "status": "active",
+    "cases_assigned": 6,
+    "created_at": "2023-06-05T10:00:00Z"
+  },
+  {
+    "id": "PO005",
+    "name": "Inspector Venkat Reddy",
+    "badge_number": "TS-6789",
+    "station": "Banjara Hills Police Station",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "email": "venkat.reddy@police.gov.in",
+    "phone": "+91-9123456784",
+    "status": "active",
+    "cases_assigned": 10,
+    "created_at": "2023-02-14T10:00:00Z"
+  }
+]

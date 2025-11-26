@@ -1,0 +1,52 @@
+[
+  {
+    "id": "N001",
+    "title": "Possible Match Found",
+    "message": "A potential match has been found for case MP001 - Rajesh Kumar Sharma",
+    "type": "match",
+    "case_id": "MP001",
+    "timestamp": "2024-11-25T14:30:00Z",
+    "read": false,
+    "priority": "high"
+  },
+  {
+    "id": "N002",
+    "title": "Case Verified",
+    "message": "Police have verified case MP002 - Priya Patel",
+    "type": "verification",
+    "case_id": "MP002",
+    "timestamp": "2024-11-25T12:00:00Z",
+    "read": false,
+    "priority": "medium"
+  },
+  {
+    "id": "N003",
+    "title": "New Found Person Report",
+    "message": "A new found person report has been filed in Delhi",
+    "type": "new_case",
+    "case_id": "FP001",
+    "timestamp": "2024-11-25T10:00:00Z",
+    "read": true,
+    "priority": "medium"
+  },
+  {
+    "id": "N004",
+    "title": "Case Reunited",
+    "message": "Great news! Case MP005 - Rahul Verma has been reunited with family",
+    "type": "reunited",
+    "case_id": "MP005",
+    "timestamp": "2024-11-24T16:00:00Z",
+    "read": true,
+    "priority": "low"
+  },
+  {
+    "id": "N005",
+    "title": "Update Required",
+    "message": "Please update case details for MP004 - Sunita Reddy",
+    "type": "update",
+    "case_id": "MP004",
+    "timestamp": "2024-11-24T09:00:00Z",
+    "read": true,
+    "priority": "medium"
+  }
+]
