@@ -13,7 +13,7 @@ const Footer = () => {
                 <Shield className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <div className="font-bold text-foreground">Missing Persons</div>
+                <div className="font-bold text-foreground">Pehchaan</div>
                 <div className="text-xs text-muted-foreground">India Safety Platform</div>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2024 Missing Persons India. A Government of India Initiative.
+              © 2024 Pehchaan. A Government of India Initiative.
             </p>
             <div className="flex space-x-4 text-sm text-muted-foreground">
               <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>

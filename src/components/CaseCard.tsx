@@ -7,7 +7,6 @@ import { formatDistanceToNow } from "date-fns";
 interface CaseCardProps {
   id: string;
   name: string;
-  age: number;
   gender: string;
   city: string;
   state: string;
@@ -20,7 +19,6 @@ interface CaseCardProps {
 const CaseCard = ({
   id,
   name,
-  age,
   gender,
   city,
   state,
@@ -29,19 +27,6 @@ const CaseCard = ({
   last_seen,
   description,
 }: CaseCardProps) => {
-  const getStatusVariant = (status: string) => {
-    switch (status) {
-      case "missing":
-        return "destructive";
-      case "found":
-        return "warning";
-      case "reunited":
-        return "default";
-      default:
-        return "secondary";
-    }
-  };
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case "missing":
@@ -73,9 +58,7 @@ const CaseCard = ({
           <h3 className="font-semibold text-lg text-card-foreground line-clamp-1">{name}</h3>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
             <User className="h-3.5 w-3.5" />
-            <span>
-              {age} years • {gender}
-            </span>
+            <span>{gender}</span>
           </div>
         </div>
 

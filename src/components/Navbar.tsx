@@ -85,14 +85,15 @@ const Navbar = () => {
       <div className="container flex h-16 items-center px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 mr-6">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <Shield className="h-6 w-6 text-primary-foreground" />
-          </div>
-          <div className="hidden md:flex flex-col">
-            <span className="text-sm font-bold text-foreground">Missing Persons</span>
-            <span className="text-xs text-muted-foreground">India Safety Platform</span>
-          </div>
-        </Link>
+  <div className="flex h-24 w-24 items-center justify-center rounded-full">
+    <img
+      src="/image/logo.png" // path relative to public folder
+      alt="Pehchaan Logo"
+      className="h-26 w-26 object-contain"
+    />
+  </div>
+</Link>
+
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-1 items-center space-x-2">

@@ -121,10 +121,8 @@ const CaseDetail = () => {
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <User className="h-4 w-4 text-primary" />
                     <div>
-                      <div className="text-xs">Age & Gender</div>
-                      <div className="font-medium text-card-foreground">
-                        {caseData.age} years • {caseData.gender}
-                      </div>
+                      <div className="text-xs">Gender</div>
+                      <div className="font-medium text-card-foreground">{caseData.gender}</div>
                     </div>
                   </div>
 

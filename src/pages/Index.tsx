@@ -11,32 +11,56 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-primary/80">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]" />
-        <div className="container relative z-10 mx-auto">
-          <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in-up">
-            <div className="inline-flex items-center justify-center p-2 bg-primary-foreground/10 rounded-full mb-4">
-              <Shield className="h-12 w-12 text-primary-foreground" />
+      <section className="relative pt-16 pb-36 px-4 overflow-hidden bg-slate-900 text-white">
+        {/* Abstract Background Elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+          <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-600 rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute bottom-[10%] right-[-5%] w-96 h-96 bg-amber-500 rounded-full blur-[120px] opacity-10"></div>
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        </div>
+
+        <div className="container relative z-10 mx-auto text-center">
+          <div className="animate-fade-in-up flex flex-col items-center">
+            
+            {/* Logo / Badge */}
+            <div className="mb-8 p-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl">
+               <img
+                src="/image/logo.png" 
+                alt="Pehchaan Logo"
+                className="h-20 w-20 object-contain drop-shadow-lg"
+              />
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
-              Help Reunite Families Across India
+
+            {/* Main Headline */}
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-slate-400">
+              Reuniting Lives <br className="hidden md:block" /> Through Technology.
             </h1>
-            <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-              Advanced facial recognition and community support to find missing persons and reunite loved ones.
+
+            {/* Subheadline */}
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Using advanced AI facial recognition to connect missing loved ones with their families. Fast, secure, and accessible to everyone.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link to="/upload">
-                <Button size="lg" variant="secondary" className="gap-2">
+
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-5 w-full max-w-md justify-center">
+              <Link to="/upload" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full h-14 gap-2 text-lg bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-900/50 transition-all transform hover:-translate-y-1">
                   <Upload className="h-5 w-5" />
-                  Upload Photo to Search
+                  Scan & Search
                 </Button>
               </Link>
-              <Link to="/cases">
-                <Button size="lg" variant="outline" className="gap-2 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground/20">
+              <Link to="/cases" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full h-14 gap-2 text-lg border-slate-600 text-black hover:bg-white/10 hover:text-white transition-all">
                   <Search className="h-5 w-5" />
-                  Browse All Cases
+                  Browse Database
                 </Button>
               </Link>
+            </div>
+
+            {/* Trust Badge */}
+            <div className="mt-12 flex items-center gap-2 text-sm text-slate-400 bg-slate-800/50 py-2 px-4 rounded-full border border-slate-700">
+              <Shield className="h-4 w-4 text-green-400" />
+              <span>Secure & Verified by Law Enforcement</span>
             </div>
           </div>
         </div>
